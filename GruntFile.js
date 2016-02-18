@@ -25,9 +25,17 @@ module.exports = function (grunt) {
             files: ['app/less/**/*.less', 'app/js/**/*.js', 'app/!js/combined.js', 'app/!js/combined_min.js'],
             //tasks: ['concat', 'uglify', 'less']
             tasks: ['less']
+        },
+        'gh-pages': {
+            options: {
+                base: 'dist'
+            },
+            src: ['app/']
         }
+
     });
     grunt.loadNpmTasks('grunt-contrib-less');
     grunt.loadNpmTasks('grunt-contrib-watch');
+    grunt.loadNpmTasks('grunt-gh-pages');
     grunt.registerTask('default', ['concat:js', 'uglify:js']);
 };

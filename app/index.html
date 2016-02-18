@@ -46,24 +46,6 @@
     </div>
   </nav>
 
-  <div class="landing-video-box">
-    <video id="landing-video" class="landing-video" autoplay loop preload="auto" poster="media/poster-dog-video.png" muted>
-      <source src="media/dogs.mp4" type="video/mp4"  />
-    </video>
-    <section>
-      <div class="jumbotron">
-        <div class="container">
-          <div class="col-md-6">
-            <h1>Administramos tus perros digitales como nadie</h1>
-            <p>Comienza a utilizar la plataforma más eficiente, robusta y segura, diseñada para organizar tus perros digitales en México.</p>
-            <p><a role="button" href="#" class="btn btn-success btn-lg">Ver más »</a></p>
-          </div>
-          <div class="col-md-6"></div>
-        </div>
-      </div>
-    </section>
-  </div>
-
   <div ng-view></div>
 
   <div>Angular seed app: v<span app-version></span></div>
@@ -71,13 +53,20 @@
   <!-- In production use:
   <script src="//ajax.googleapis.com/ajax/libs/angularjs/x.x.x/angular.min.js"></script>
   -->
-  <!--<script src="bower_components/angular/angular.js"></script>-->
-  <!--<script src="bower_components/angular-route/angular-route.js"></script>-->
-  <!--<script src="app.js"></script>-->
-  <!--<script src="view1/view1.js"></script>-->
-  <!--<script src="view2/view2.js"></script>-->
-  <!--<script src="components/version/version.js"></script>-->
-  <!--<script src="components/version/version-directive.js"></script>-->
-  <!--<script src="components/version/interpolate-filter.js"></script>-->
+
+  <!-- Bibliotecas -->
+  <script src="bower_components/angular/angular.js"></script>
+  <script src="bower_components/angular-route/angular-route.js"></script>
+
+  <!-- Plugins de animación -->
+  <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/1.18.2/TweenMax.min.js"></script>
+
+  <!-- App -->
+  <script src="app.js"></script>
+  <script src="view1/view1.js"></script>
+  <script src="view2/view2.js"></script>
+  <script src="components/version/version.js"></script>
+  <script src="components/version/version-directive.js"></script>
+  <script src="components/version/interpolate-filter.js"></script>
 </body>
 </html>
