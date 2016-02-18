@@ -28,9 +28,9 @@ module.exports = function (grunt) {
         },
         'gh-pages': {
             options: {
-                base: 'dist'
+                base: 'app'
             },
-            src: ['app/']
+            src: ['**/**']
         }
 
     });
