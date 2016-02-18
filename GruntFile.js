@@ -26,6 +26,7 @@ module.exports = function (grunt) {
             //tasks: ['concat', 'uglify', 'less']
             tasks: ['less']
         },
+
         'gh-pages': {
             options: {
                 base: 'app'
